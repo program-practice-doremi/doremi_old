@@ -14,6 +14,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -24,6 +25,7 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QLineEdit *lineEdit;
+    QPushButton *pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -41,6 +43,12 @@ public:
         font.setPointSize(26);
         lineEdit->setFont(font);
         lineEdit->setAlignment(Qt::AlignCenter);
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(350, 360, 81, 31));
+        QFont font1;
+        font1.setPointSize(14);
+        pushButton->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -59,6 +67,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         lineEdit->setText(QCoreApplication::translate("MainWindow", "Doremi", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "play", nullptr));
     } // retranslateUi
 
 };

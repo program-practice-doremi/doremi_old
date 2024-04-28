@@ -10,13 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mediaplayer.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    mediaplayer.h
 
 FORMS += \
     mainwindow.ui
+
+LIBS += \
+    -lwinmm
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
