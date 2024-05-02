@@ -1,0 +1,11 @@
+debug/channal.o
+debug/main.o
+debug/mainwindow.o
+debug/mediaplayer.o
+debug/music.o
+debug/test.o
+debug/moc_channal.o
+debug/moc_mainwindow.o
+debug/moc_mediaplayer.o
+debug/moc_music.o
+debug/moc_test.o

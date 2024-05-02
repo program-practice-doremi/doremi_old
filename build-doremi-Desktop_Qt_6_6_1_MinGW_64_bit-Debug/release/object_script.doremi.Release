@@ -1,0 +1,11 @@
+release/channal.o
+release/main.o
+release/mainwindow.o
+release/mediaplayer.o
+release/music.o
+release/test.o
+release/moc_channal.o
+release/moc_mainwindow.o
+release/moc_mediaplayer.o
+release/moc_music.o
+release/moc_test.o

@@ -9,13 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    channal.cpp \
     main.cpp \
     mainwindow.cpp \
-    mediaplayer.cpp
+    mediaplayer.cpp \
+    music.cpp \
+    test.cpp
 
 HEADERS += \
+    channal.h \
+    instruments.h \
     mainwindow.h \
-    mediaplayer.h
+    mediaplayer.h \
+    music.h \
+    pitch.h \
+    test.h
 
 FORMS += \
     mainwindow.ui
